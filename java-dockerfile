@@ -1,0 +1,5 @@
+From openjdk:8
+RUN mkdir /app
+COPY ./target/*.jar /app/dolittleadmin.jar
+WORKDIR /app
+CMD ["java", "-jar", "dolittleadmin.jar"]
